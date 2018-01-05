@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Built-By: husarya
+Class-Path: rest-api-1.0-SNAPSHOT-manual.lib/jersey-bean-validation-2.
+ 25.jar rest-api-1.0-SNAPSHOT-manual.lib/javax.inject-2.5.0-b30.jar re
+ st-api-1.0-SNAPSHOT-manual.lib/jersey-common-2.25.jar rest-api-1.0-SN
+ APSHOT-manual.lib/javax.annotation-api-1.2.jar rest-api-1.0-SNAPSHOT-
+ manual.lib/jersey-guava-2.25.jar rest-api-1.0-SNAPSHOT-manual.lib/hk2
+ -api-2.5.0-b30.jar rest-api-1.0-SNAPSHOT-manual.lib/hk2-utils-2.5.0-b
+ 30.jar rest-api-1.0-SNAPSHOT-manual.lib/aopalliance-repackaged-2.5.0-
+ b30.jar rest-api-1.0-SNAPSHOT-manual.lib/hk2-locator-2.5.0-b30.jar re
+ st-api-1.0-SNAPSHOT-manual.lib/javassist-3.20.0-GA.jar rest-api-1.0-S
+ NAPSHOT-manual.lib/osgi-resource-locator-1.0.1.jar rest-api-1.0-SNAPS
+ HOT-manual.lib/jersey-server-2.25.jar rest-api-1.0-SNAPSHOT-manual.li
+ b/jersey-client-2.25.jar rest-api-1.0-SNAPSHOT-manual.lib/jersey-medi
+ a-jaxb-2.25.jar rest-api-1.0-SNAPSHOT-manual.lib/validation-api-1.1.0
+ .Final.jar rest-api-1.0-SNAPSHOT-manual.lib/hibernate-validator-5.1.3
+ .Final.jar rest-api-1.0-SNAPSHOT-manual.lib/jboss-logging-3.1.3.GA.ja
+ r rest-api-1.0-SNAPSHOT-manual.lib/classmate-1.0.0.jar rest-api-1.0-S
+ NAPSHOT-manual.lib/javax.el-api-2.2.4.jar rest-api-1.0-SNAPSHOT-manua
+ l.lib/javax.el-2.2.4.jar rest-api-1.0-SNAPSHOT-manual.lib/javax.ws.rs
+ -api-2.0.1.jar rest-api-1.0-SNAPSHOT-manual.lib/jersey-container-griz
+ zly2-http-2.25.jar rest-api-1.0-SNAPSHOT-manual.lib/grizzly-http-serv
+ er-2.3.28.jar rest-api-1.0-SNAPSHOT-manual.lib/grizzly-http-2.3.28.ja
+ r rest-api-1.0-SNAPSHOT-manual.lib/grizzly-framework-2.3.28.jar rest-
+ api-1.0-SNAPSHOT-manual.lib/jersey-media-json-jackson-2.25.jar rest-a
+ pi-1.0-SNAPSHOT-manual.lib/jersey-entity-filtering-2.25.jar rest-api-
+ 1.0-SNAPSHOT-manual.lib/jackson-jaxrs-base-2.8.4.jar rest-api-1.0-SNA
+ PSHOT-manual.lib/jackson-core-2.8.4.jar rest-api-1.0-SNAPSHOT-manual.
+ lib/jackson-databind-2.8.4.jar rest-api-1.0-SNAPSHOT-manual.lib/jacks
+ on-jaxrs-json-provider-2.8.4.jar rest-api-1.0-SNAPSHOT-manual.lib/jac
+ kson-module-jaxb-annotations-2.8.4.jar rest-api-1.0-SNAPSHOT-manual.l
+ ib/jackson-annotations-2.8.4.jar rest-api-1.0-SNAPSHOT-manual.lib/cor
+ s-filter-2.5.jar rest-api-1.0-SNAPSHOT-manual.lib/java-property-utils
+ -1.9.1.jar
+Build-Jdk: 1.8.0_151
+Created-By: Maven Integration for Eclipse
+Main-Class: pl.coderslab.rest.Main
+
