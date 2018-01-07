@@ -1,1 +1,1 @@
-bin/* linguist-vendored
+*.java linguist-language=JavaScript
