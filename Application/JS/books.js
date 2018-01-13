@@ -4,7 +4,13 @@ $(function(){
 	var $formElem = $('form');
 	var $delButtons = $('.remove');
 	var $editButtons = $('.edit');
+	var $formEdit = $('.formEdit');
 
+
+
+	$('.button_plus').click(function(){
+				$('form').slideToggle();
+	 });
 
 	function addBook(book){
 
@@ -16,8 +22,8 @@ $(function(){
 		var $newPublisher = $('<td>', {class: 'showDetails'}).text(book.publisher).attr('data-id', book.id);
 		var $newType = $('<td>', {class: 'showDetails'}).text(book.type).attr('data-id', book.id);
 		var $newIsbn = $('<td>', {class: 'showDetails'}).text(book.isbn).attr('data-id', book.id);
-		var $newDel = $('<button>', {class: 'remove'}).text('Delete').attr('data-id', book.id);
-		var $newEdit = $('<button>', {class: 'edit'}).text('Edit').attr('data-id', book.id);
+		var $newDel = $('<td>', {class: 'remove'}).text('Delete').attr('data-id', book.id);
+		var $newEdit = $('<td>', {class: 'edit'}).text('Edit').attr('data-id', book.id);
 
     $newTr.append($newId);
 		$newTr.append($newTitle);
@@ -46,7 +52,7 @@ $(function(){
 	})
 
 	//posting new books to the server
-	$formElem.on('submit', function(){
+	$formElem.delegate('.save2', 'click', function(){
 
 		event.preventDefault();
 
@@ -67,7 +73,7 @@ $(function(){
 			contentType: 'application/json'
 		})
 		.done(function(newBook){
-			addBook(newBook);
+			addBook(book);
 		})
 		.fail(function(response){
 //			alert('error saving book');
@@ -141,10 +147,10 @@ $(function(){
 	//editing books
 	$bookList.delegate('.edit', 'click', function(){
 
-		var $li = $(this).closest('li');
+		var $li = $(this).next().next();
 
 		$.ajax({
-			url: 'http://localhost:8282/books/{id}/update',
+			url: 'http://localhost:8282/books/'+$(this).attr('data-id')+'update',
 			method: 'PUT',
 		})
 		.done(function(){
@@ -154,5 +160,8 @@ $(function(){
 		})
 
 	})
+
+
+
 
 });
